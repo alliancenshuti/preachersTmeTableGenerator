@@ -18,8 +18,9 @@ public class Main {
 		System.out.println("1. register Preacher \t 2. get time table  \t 3. get preachers");
 		
 		System.out.print("enter choice: ");
+		if(scanner.hasNextInt()) {
 		int choice = scanner.nextInt();
-		boolean contRegistration = false;
+		
 		switch(choice) {
 		
 		case 1:
@@ -60,8 +61,8 @@ public class Main {
 		default:
 			System.out.println("wrong choice | try again ");
 		}
-		
-		
+		}
+		scanner.close();
 
 	}
 	
